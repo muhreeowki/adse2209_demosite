@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* SOCIAL MEDIA ICONS CSS STYLESHEET */
+
+/* Find the source url and get the coresponding icons */
+.social-media li a:before 
+{
+   font-family: 'FontAwesome';
+   -webkit-font-smoothing: antialiesd;
+   /* TODO: ADD CODE FOR URL AND ICON */
+}
+
+.screen-reader-text 
+{
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+.social-menu ul 
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+}

@@ -1,0 +1,156 @@
+/* MAIN CSS STYLESHEET */
+/*Rules that will be used accross the entire website*/
+@charset "utf-8";
+
+/* Import the stylesheets*/
+@import url("socialmedia.css");
+@import url("fonts.css");
+@import url("mobile.css") screen and (max-width:480px); /* Import the mobile.css stylesheet */
+@import url("tablet.css") screen and (min-width:481px); 
+@import url("desktop.css") screen and (min-width:800px);
+/* Style html body */
+body
+{
+   margin: 0;
+   padding: 0;
+   text-align: justify;
+   font-size: 18px;
+   font-family: 'ubuntuitalic';
+}
+
+/* Style the container div */
+#container 
+{
+   margin: 5px auto;
+   padding: 20px;
+   border: 2px hidden;
+   border-radius: 10px;
+   color: #e0cca3;;
+}
+
+/* style the links */
+a 
+{
+   color: #8a86d7;
+}
+
+/* Style Page heading using page-heading class selector */
+.page-heading
+{
+   color: rgb(224, 204, 163);
+   font-weight: 800;
+   font-size: 3em;
+   text-align: center;
+   font-family: 'ubunturegular';
+}
+
+/* Styling images */
+.image-gallery img {
+   width: 100%;
+   height: auto;
+   vertical-align: middle; 
+}
+
+/* Syling figuer classes */
+.description {
+   padding: 15px;
+}
+
+.responsive-image {
+   border: solid rgba(224, 204, 163, 0.552) 3px;
+   border-radius: 10px;
+}
+
+.price::before {
+   content: 'Ksh. ';
+}
+
+.price::after {
+   content: '/='
+}
+
+.section-heading {
+   text-align: center;
+   font-size: 2.3em;
+   font-weight: 800;
+   letter-spacing: 2px;
+   /* color: ; */
+   font-family: 'Courier New';
+}
+
+/* Styling the Footer */
+footer {
+   text-align: center;
+   color:#e0cca3;
+   margin: 5px 0;
+   letter-spacing: 2px;
+}
+
+form {
+   font-size: 28px;
+   font-weight: 600;
+   color: #e0cca3;
+   margin: 0 auto;
+}
+
+form fieldset {
+   background-color: #ffffff1b;
+   border: 2px solid #000000;
+   border-radius: 15px;
+}
+
+.required-field {
+   color: red;
+   font-weight: 800;
+   font-size: 1.5em;
+}
+
+form label {
+   margin: 4px 0;
+   text-align: inherit;
+}
+
+form textarea, input[type="text"], input[type="email"],input[type="password"], input[type="date"], input[type="tel"],input[type="date-time"], form select 
+{
+   line-height: 30px;
+   border-radius: 5px;
+}
+
+form select 
+{
+   padding: 17px 0;
+}
+
+form input[type="submit"],input[type="reset"],input[type="button"]{
+   background: #4c4c4c;
+   background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+   background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+   background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+
+   font-size: 20px;
+   color: #e0cca3;
+   border-radius: 5px;
+   width: 120px;
+
+}
+ 
+legend{
+   text-align: center;
+}
+/* Styling Tables */
+.data-table {
+   width: 80%;
+   margin: auto;
+
+}
+.data-table tr:nth-child(odd){
+   background-color: #8a86d740;
+}
+.data-table tr:nth-child(even){
+   background-color: #022f6060;
+}
+.data-table tr:first-child{
+   background-color: #ffffff1f;
+}
+

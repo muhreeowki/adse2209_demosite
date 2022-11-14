@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* TABLET CSS STYLESHEET */
+
+/* Hide background video */
+#video-bkgd {
+   visibility: hidden;
+   width: 0;
+   height: 0;
+}
+
+body 
+{
+   background-image: url(../images/blue.jpeg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center top;
+}
+
+#container 
+{
+   background-color: rgba(0, 3, 60, 0.391);
+   width: 90%;
+}
+
+.responsive-image {
+   border: solid #FFF 3px;
+   width: 45%;
+   display: inline-flex;
+   margin: 1px 2px;
+}
+
+form textarea, input[type="text"], input[type="email"],input[type="password"], input[type="date"], input[type="tel"],input[type="date-time"], form select 
+{
+   width: 100%;
+}
