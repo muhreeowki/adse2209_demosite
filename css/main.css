@@ -2,11 +2,12 @@
 /*Rules that will be used accross the entire website*/
 @charset "utf-8";
 
-/* Import the stylesheets*/
+/* Import stylesheets*/
+@import url("font-awesome-4.7.0/css/font-awesome.min.css");
 @import url("socialmedia.css");
 @import url("fonts.css");
-@import url("mobile.css") screen and (max-width:480px); /* Import the mobile.css stylesheet */
-@import url("tablet.css") screen and (min-width:481px); 
+@import url("mobile.css") screen and (max-width:480px);
+@import url("tablet.css") screen and (min-width:480px); 
 @import url("desktop.css") screen and (min-width:800px);
 /* Style html body */
 body
@@ -152,5 +153,22 @@ legend{
 }
 .data-table tr:first-child{
    background-color: #ffffff1f;
+}
+
+.menu {
+   display: flex;
+   flex-direction: row;
+}
+
+.menu li {
+   list-style-type: none;
+}
+
+.menu li a {
+   color: #e0cca3;
+   display: block;
+   text-decoration: none;
+   padding: 1rem 1.25rem;
+   font-size: 1.25rem;
 }
 

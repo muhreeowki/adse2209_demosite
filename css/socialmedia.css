@@ -1,12 +1,11 @@
 @charset "utf-8";
 /* SOCIAL MEDIA ICONS CSS STYLESHEET */
 
-/* Find the source url and get the coresponding icons */
-.social-media li a:before 
+.social-menu li a:before 
 {
    font-family: 'FontAwesome';
    -webkit-font-smoothing: antialiesd;
-   /* TODO: ADD CODE FOR URL AND ICON */
+   content: '\f08e';
 }
 
 .screen-reader-text 
@@ -24,3 +23,26 @@
    flex-wrap: wrap;
    justify-content: flex-end;
 }
+
+.social-menu li a[href*="facebook.com"]::before {
+   content: '\f09a';
+}
+.social-menu li a[href*="instagram.com"]::before {
+   content: '\f16d';
+}
+.social-menu li a[href*="github.com"]::before {
+   content: '\f09b';
+}
+.social-menu li a[href*="linkedin.com"]::before {
+   content: '\f0e1';
+}
+.social-menu li a[href*="behance.net"]::before {
+   content: '\f1b4';
+}
+.social-menu li a[href*="youtube.com"]::before {
+   content: '\f167';
+}
+.social-menu li a[href*="twitter.com"]::before {
+   content: '\f099';
+}
+

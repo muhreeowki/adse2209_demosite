@@ -12,173 +12,156 @@
 <body>
    <video id="video-bkgd" src="/assets/space_vid.mp4" muted autoplay loop></video>
    <div id="container">
-      <ul>
-         <li><a href="https://github.com/muhreeowki" target="_blank">Github</a></li>
-         <li><a href="https://www.linkedin.com/in/muriuki-muchiri-8781b595/" target="_blank"
-               title="Connect with me on LinkedIn">LinkedIn</a></li>
-         <li><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a></li>
-         <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-         <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-         <li><a href="https://Youtube.com" target="_blank">Youtube</a></li>
-         <li><a href="https://www.behance.net/onboarding/adobe" target="_blank">Behance</a></li>
-      </ul>
-      <h1 class="page-heading">HTML Forms
-      </h1>
-      <p>
-         An HTML form is a tool in your webpage that is made up of variouse controls used to collect or obtain data from
-         the user. This information is then validated, sent to a webserver for processesing and/or storage. Examples of
-         commonly used forms are sign-up and log-in forms.
-         <br>
-         <br>
-         An example of a sign-up form is given below. The form will be used to collect details of a prospective
-         employee.<br>
-      </p>
-
-      <form name="frmSignUp" method="post" id="frmSignUp" enctype="multipart/form-data" title="Sign Up"
-         accept-charset="UTF-8">
-         Content goes here
-         <fieldset>
-            <legend>Personal Details</legend>
-
-            <p>
-               <label for="txtFirstName">First Name <span class="required">*</span>:</label><br>
-               <input type="text" name="txtFirstName" id="txtFirstName" title="Enter your first name"
-                  placeholder="First Name" form="frmSignUp" tabindex="10" autofocus required>
-            </p>
-
-            <p>
-               <label for="txtSurname">Surname <span class="required">*</span>:</label><br>
-               <input type="text" name="txtSurname" id="txtSurname" title="Enter your Surname" placeholder="Surname"
-                  form="frmSignUp" tabindex="20" required>
-            </p>
-
-            <p>
-               <label for="dpBirthdate">Date of Birth <span class="required">*</span>:</label><br>
-               <input type="date" name="dpBirthdate" id="dpBirthdate" title="Enter date of birth" tabindex="30"
-                  required>
-            </p>
-
-            <p>
-               Gender: <br>
-               <label for="rdoMale">Male <input type="radio" name="gender" id="rdoMale" value="Male" form="frmSignUp"
-                     tabindex="40"></label>
-
-               <label for="rdoFemale">Female <input type="radio" name="gender" id="rdoFemale" value="Female"
-                     form="frmSignUp" tabindex="50"></label>
-
-               <label for="rdoOther">Other <input type="radio" name="gender" id="rdoOther" value="Other"
-                     form="frmSignUp" tabindex="60"></label>
-            </p>
-
-            <p>
-               <label for="txtMaritalStatus">Marital Status</label><br>
-               <input name="txtMaritalStatus" form="frmSignUp" placeholder="Marital Status" list="dtlStatus" type="text"
-                  tabindex="70">
-               <datalist id="dtlStatus">
-                  <option value="Single">Single</option>
-                  <option value="Engaged">Engaged</option>
-                  <option value="Married">Married</option>
-                  <option value="Divorced">Divorced</option>
-                  <option value="Complicated">Complicated</option>
-               </datalist>
-            </p>
-         </fieldset>
-
-         <fieldset>
-            <legend>Account Details</legend>
-
-            <p>
-               <label for="txtUsername">Username <span class="required">*</span>: </label><br>
-               <input type="text" name="txtUsername" id="txtUsername" form="frmSignUp" required placeholder="Username"
-                  title="Enter Username" tabindex="80">
-            </p>
-
-            <p>
-               <label for="txtPassword">Password <span class="required">*</span>: </label><br>
-               <input type="password" name="txtPassword" id="txtPassword" form="frmSignUp" placeholder="Password"
-                  tabindex="90" required>
-            </p>
-
-            <p>
-               <label for="txtConfirmPassword">Confirm Password <span class="required">*</span>: </label><br>
-               <input type="password" name="txtConfirmPassword" id="txtConfirmPassword" form="frmSignUp"
-                  placeholder="Confirm Password" tabindex="100" required>
-            </p>
-
-         </fieldset>
-
-         <fieldset>
-            <legend>Contact Details</legend>
-            <p>
-               <label for="txtTel">Phone <span class="required">*</span>: </label><br>
-               <input type="tel" name="txtTel" id="txtTel" form="frmSignUp" placeholder="Phone Number"
-                  title="Enter your phone number" tabindex="110" required>
-            </p>
-
-            <p>
-               <label for="txtEmail">Email: </label><br>
-               <input type="email" name="txtEmail" id="txtEmail" form="frmSignUp" placeholder="name@domain.com"
-                  title="Enter your email" tabindex="120">
-            </p>
-
-            <p>
-               <label for="txtPostalAddress">Postal Address: </label><br>
-               <input type="text" name="txtPostalAddress" id="txtPostalAddress" form="frmSignUp"
-                  placeholder="P.O Box 1234" title="Enter your Postal Address" tabindex="130">
-            </p>
-
-            <p>
-               <label for="txtCity">Town/City <span class="required">*</span>: </label><br>
-               <input type="text" name="txtCity" id="txtCity" form="frmSignUp" placeholder="Nairobi"
-                  title="Enter your City" tabindex="140" required>
-            </p>
-
-            <p>
-               <label for="txtCountry">Country: </label><br>
-               <select name="txtCountry" id="txtCountry" form="frmSignUp" placeholder="Kenya" title="Enter your Country"
-                  tabindex="150">
-               </select>
-            </p>
-
-         </fieldset>
-
-         <fieldset>
-            <legend>Other Details</legend>
-            <p>
-               <label for="dtlHobbies">Hobbies</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies1" form="frmSignUp"><label
-                  for="chkHobbies">Football</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies8" form="frmSignUp"><label
-                  for="chkHobbies">Basketball</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies2" form="frmSignUp"><label
-                  for="chkHobbies">Cooking</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies3" form="frmSignUp"><label
-                  for="chkHobbies">Reading</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies4" form="frmSignUp"><label
-                  for="chkHobbies">Gardening</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies5" form="frmSignUp"><label
-                  for="chkHobbies">Hiking</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies6" form="frmSignUp"><label
-                  for="chkHobbies">Playing an Instrument</label><br>
-               <input type="checkbox" name="chkHobbies" id="chkHobbies7" form="frmSignUp"><label
-                  for="chkHobbies">Origami</label>
-            </p>
-
-            <p>
-               
-               <label for="cvFile">Uplode CV:</label><br>
-               <input type="file" name="cvFile" id="cvFile" form="frmSignUp"><br>
-               <input type="submit" value="submit" form="frmSignUp">
-               <input type="reset" value="reset" form="frmSignUp">
-            </p>
-
-            <p>
-               <label for="txaAbout">Write about yourself</label><br>
-                  <textarea name="txaAbout" id="txaAbout" cols="10" rows="5" form="frmSignUp" placeholder="Write Something..."></textarea>
-            </p>
-         </fieldset>
-
-      </form>
+      <header>
+         <div class="social-menu menu">
+            <ul>
+               <li><a href="https://github.com/muhreeowki" target="_blank"><span class="screen-reader-text">Github</span></a></li>
+               <li><a href="https://www.linkedin.com/in/muriuki-muchiri-8781b595/" target="_blank" title="Connect with me on LinkedIn"><span class="screen-reader-text">LinkedIn</span></a></li>
+               <li><a href="https://facebook.com/?_rdc=1&_rdr" target="_blank"><span class="screen-reader-text">Facebook</span></a></li>
+               <li><a href="https://www.instagram.com/" target="_blank"><span class="screen-reader-text">Instagram</span></a></li>
+               <li><a href="https://twitter.com" target="_blank"><span class="screen-reader-text">Twitter</span></a></li>
+               <li><a href="https://youtube.com" target="_blank"><span class="screen-reader-text">Youtube</span></a></li>
+               <li><a href="https://www.behance.net/onboarding/adobe" target="_blank"><span class="screen-reader-text">Behance</span></a></li>
+            </ul>
+         </div>
+         <h1 class="page-heading">HTML Forms
+         </h1>
+      </header>
+      
+      <main>
+         <p>
+            An HTML form is a tool in your webpage that is made up of variouse controls used to collect or obtain data from
+            the user. This information is then validated, sent to a webserver for processesing and/or storage. Examples of
+            commonly used forms are sign-up and log-in forms.
+            <br>
+            <br>
+            An example of a sign-up form is given below. The form will be used to collect details of a prospective
+            employee.<br>
+         </p>
+         <form name="frmSignUp" method="post" id="frmSignUp" enctype="multipart/form-data" title="Sign Up"
+            accept-charset="UTF-8">
+            Content goes here
+            <fieldset>
+               <legend>Personal Details</legend>
+               <p>
+                  <label for="txtFirstName">First Name <span class="required">*</span>:</label><br>
+                  <input type="text" name="txtFirstName" id="txtFirstName" title="Enter your first name"
+                     placeholder="First Name" form="frmSignUp" tabindex="10" autofocus required>
+               </p>
+               <p>
+                  <label for="txtSurname">Surname <span class="required">*</span>:</label><br>
+                  <input type="text" name="txtSurname" id="txtSurname" title="Enter your Surname" placeholder="Surname"
+                     form="frmSignUp" tabindex="20" required>
+               </p>
+               <p>
+                  <label for="dpBirthdate">Date of Birth <span class="required">*</span>:</label><br>
+                  <input type="date" name="dpBirthdate" id="dpBirthdate" title="Enter date of birth" tabindex="30"
+                     required>
+               </p>
+               <p>
+                  Gender: <br>
+                  <label for="rdoMale">Male <input type="radio" name="gender" id="rdoMale" value="Male" form="frmSignUp"
+                        tabindex="40"></label>
+                  <label for="rdoFemale">Female <input type="radio" name="gender" id="rdoFemale" value="Female"
+                        form="frmSignUp" tabindex="50"></label>
+                  <label for="rdoOther">Other <input type="radio" name="gender" id="rdoOther" value="Other"
+                        form="frmSignUp" tabindex="60"></label>
+               </p>
+               <p>
+                  <label for="txtMaritalStatus">Marital Status</label><br>
+                  <input name="txtMaritalStatus" form="frmSignUp" placeholder="Marital Status" list="dtlStatus" type="text"
+                     tabindex="70">
+                  <datalist id="dtlStatus">
+                     <option value="Single">Single</option>
+                     <option value="Engaged">Engaged</option>
+                     <option value="Married">Married</option>
+                     <option value="Divorced">Divorced</option>
+                     <option value="Complicated">Complicated</option>
+                  </datalist>
+               </p>
+            </fieldset>
+            <fieldset>
+               <legend>Account Details</legend>
+               <p>
+                  <label for="txtUsername">Username <span class="required">*</span>: </label><br>
+                  <input type="text" name="txtUsername" id="txtUsername" form="frmSignUp" required placeholder="Username"
+                     title="Enter Username" tabindex="80">
+               </p>
+               <p>
+                  <label for="txtPassword">Password <span class="required">*</span>: </label><br>
+                  <input type="password" name="txtPassword" id="txtPassword" form="frmSignUp" placeholder="Password"
+                     tabindex="90" required>
+               </p>
+               <p>
+                  <label for="txtConfirmPassword">Confirm Password <span class="required">*</span>: </label><br>
+                  <input type="password" name="txtConfirmPassword" id="txtConfirmPassword" form="frmSignUp"
+                     placeholder="Confirm Password" tabindex="100" required>
+               </p>
+            </fieldset>
+            <fieldset>
+               <legend>Contact Details</legend>
+               <p>
+                  <label for="txtTel">Phone <span class="required">*</span>: </label><br>
+                  <input type="tel" name="txtTel" id="txtTel" form="frmSignUp" placeholder="Phone Number"
+                     title="Enter your phone number" tabindex="110" required>
+               </p>
+               <p>
+                  <label for="txtEmail">Email: </label><br>
+                  <input type="email" name="txtEmail" id="txtEmail" form="frmSignUp" placeholder="name@domain.com"
+                     title="Enter your email" tabindex="120">
+               </p>
+               <p>
+                  <label for="txtPostalAddress">Postal Address: </label><br>
+                  <input type="text" name="txtPostalAddress" id="txtPostalAddress" form="frmSignUp"
+                     placeholder="P.O Box 1234" title="Enter your Postal Address" tabindex="130">
+               </p>
+               <p>
+                  <label for="txtCity">Town/City <span class="required">*</span>: </label><br>
+                  <input type="text" name="txtCity" id="txtCity" form="frmSignUp" placeholder="Nairobi"
+                     title="Enter your City" tabindex="140" required>
+               </p>
+               <p>
+                  <label for="txtCountry">Country: </label><br>
+                  <select name="txtCountry" id="txtCountry" form="frmSignUp" placeholder="Kenya" title="Enter your Country"
+                     tabindex="150">
+                  </select>
+               </p>
+            </fieldset>
+            <fieldset>
+               <legend>Other Details</legend>
+               <p>
+                  <label for="dtlHobbies">Hobbies</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies1" form="frmSignUp"><label
+                     for="chkHobbies">Football</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies8" form="frmSignUp"><label
+                     for="chkHobbies">Basketball</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies2" form="frmSignUp"><label
+                     for="chkHobbies">Cooking</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies3" form="frmSignUp"><label
+                     for="chkHobbies">Reading</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies4" form="frmSignUp"><label
+                     for="chkHobbies">Gardening</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies5" form="frmSignUp"><label
+                     for="chkHobbies">Hiking</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies6" form="frmSignUp"><label
+                     for="chkHobbies">Playing an Instrument</label><br>
+                  <input type="checkbox" name="chkHobbies" id="chkHobbies7" form="frmSignUp"><label
+                     for="chkHobbies">Origami</label>
+               </p>
+               <p>
+         
+                  <label for="cvFile">Uplode CV:</label><br>
+                  <input type="file" name="cvFile" id="cvFile" form="frmSignUp"><br>
+                  <input type="submit" value="submit" form="frmSignUp">
+                  <input type="reset" value="reset" form="frmSignUp">
+               </p>
+               <p>
+                  <label for="txaAbout">Write about yourself</label><br>
+                     <textarea name="txaAbout" id="txaAbout" cols="10" rows="5" form="frmSignUp" placeholder="Write Something..."></textarea>
+               </p>
+            </fieldset>
+         </form>
+      </main>
 
       <footer class="page-footer">ADSE 2209 Copyright &copy; 2022 -
          <script>

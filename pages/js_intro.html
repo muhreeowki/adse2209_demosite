@@ -1,63 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <link rel="stylesheet" href="/css/main.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>ADSE 2209 - Animations</title>
-   <!-- Internal stylesheet -->
-   <style>
-      #css-animation-div {
-         width: 150px;
-         height: 80px;
-         background-color: red;
-         position: relative;
-         font-weight: bold;
-         padding: 15px;
-         font-size: 20px;
-         /* Create Animation using shorthand for animation */
-         animation: anim_div 5s 2;
-      }
-
-      /* Set-up the animation's keyframes */
-      @keyframes anim_div 
-      {
-         0%
-         {
-            transform: rotate(0deg);
-            left: 0px;
-         }
-
-         25%
-         {
-            transform: rotate(20deg);
-            left: 0px;
-         }
-
-         50% 
-         {
-            transform: rotate(0deg);
-            left: 500px;
-         }
-
-         75%
-         {
-            transform: rotate(0deg);
-            left: 0px;
-            background-color: blue;
-         }
-
-         100%
-         {
-            transform: rotate(-360deg);
-            left: 0px;
-         }
-      }
-   </style>
+   <title>ADSE 2209 - JavaScript Introduction</title>
+   <script>
+      // Prompt user to enter their name.
+      let username = prompt('Enter name', 'user');
+   </script>
 </head>
-
 <body>
    <video id="video-bkgd" src="/assets/space_vid.mp4" muted autoplay loop></video>
    <div id="container">
@@ -73,18 +26,17 @@
                <li><a href="https://www.behance.net/onboarding/adobe" target="_blank"><span class="screen-reader-text">Behance</span></a></li>
             </ul>
          </div>
-         <h1 class="page-heading">CSS Animations</h1>
+         <h1 class="page-heading">JavaScript Introduction</h1>
       </header>
-      
+
       <main>
-         <p>
-            CSS Animation is the process of changing an element&rsquo;s properties without the use of javascript <br>
-            Below is an example of CSS Animation.
-            <div id="css-animation-div">CSS Animation</div>
-         </p>
+         <p>This page introduces us to JavaScript.</p>
+         <script>
+            document.writeln("<h3>Hello <u>" + username + "</u> from JavaScript.</h3>");
+         </script>
       </main>
       
-      <footer class="page-footer">ADSE 2209 Copyright &copy; 2022 -
+      <footer class="page-footer">ADSE 2209 Copyright &copy; 2022 - 
          <script>
             // This is a script to update the current year automatically
             document.write("<span>" + new Date().getFullYear() + "</span>");
@@ -93,7 +45,7 @@
          Powered by <a href="#" target="_blank">Muh Industries</a>
       </footer>
    </div>
-
+   
 </body>
 
 </html>
