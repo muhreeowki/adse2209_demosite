@@ -131,7 +131,6 @@
             break;
          case 3:
             currDay = "Wednesday";
-
             break;
          case 4:
             currDay = "Thursday";
@@ -151,5 +150,4 @@
       document.write("<h3 class=\'section-heading\'>Date and Time</h3><br>");
       document.write("Date: " + currDay + " " + currYear + "/" +currMonth + "/" + currDate);
       document.write("<br>Time: " + currHour + ":" + currMin + ":" + currSec + "</p>");
-
 }());
